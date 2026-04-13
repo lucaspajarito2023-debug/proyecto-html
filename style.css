@@ -1,0 +1,40 @@
+.header{
+    height: 110px;
+    background: linear-gradient(black, red);
+    justify-content: center;
+    padding: 7px;
+    justify-content: center;
+    align-items:center ;
+}
+.div-n1{
+    margin: o auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-n1 img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media(max-width:768px) {
+    .header{
+        height: 60px;
+        background: linear-gradient(black, red);
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+
+    .div-n1{
+        flex-direction: initial;
+        gap: 10px;
+        text-align: center;
+    }
+    .div-n1 img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
