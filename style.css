@@ -1,40 +1,80 @@
-.header{
-    height: 110px;
-    background: linear-gradient(black, red);
-    justify-content: center;
-    padding: 7px;
-    justify-content: center;
-    align-items:center ;
+body{
+    background: linear-gradient(to right, rgb(251, 255, 255), rgb(117, 116, 194));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.div-n1{
-    margin: o auto;
+header{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap:600px;
+}
+.hm1__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    gap: 20px;
 }
-.div-n1 img{
-    width:100px;
-    height: 100px;
+.hm1__title img{
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    border: solid 2px black;
 }
-
+.hm1-container__menu{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hm1-container__menu img{
+    width: 30px;
+    height: 30px;
+}
+.hm1-container__menu a{
+    text-decoration: none;
+}
+.hm1-container__menu li{
+    list-style: none;
+}
+.hm1-container__menu a:hover{
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+}
 @media(max-width:768px) {
-    .header{
-        height: 60px;
-        background: linear-gradient(black, red);
+    header{
+        display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 4px;
+        align-items: center ;
+        gap: 2px;
     }
-
-    .div-n1{
-        flex-direction: initial;
-        gap: 10px;
-        text-align: center;
-    }
-    .div-n1 img{
-        width:40px;
-        height: 40px;
+    .hm1__title img{
+        width: 50px;
+        height: 50px;        
         border-radius: 50%;
+        border: solid 2px black;
+        margin-top: 0;
+    }   
+    .hm1-container__menu{
+        display: flex;
+        gap: 15px;
+    }
+    .hm1-container__menu a{
+        text-decoration: none;
+        color: rgb(22, 22, 22);
+    }
+    .hm1-container__menu li{
+        list-style: none;
+    }
+    .hm1-container__menu a:hover{
+        color: rgb(22, 22, 22);
+        font-weight: bold;
     }
 }
