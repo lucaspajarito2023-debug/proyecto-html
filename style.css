@@ -37,6 +37,13 @@ header{
     color: rgb(22, 22, 22);
     font-weight: bold;
 }
+.categorias-visuales{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 @media(max-width:768px) {
     header{
         flex-direction: column;
@@ -55,5 +62,27 @@ header{
     .hm1__title img{
         justify-content: center;
         align-items: center;
+    }
+    .buscar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .categorias-visuales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .categorias{
+        display: flex;
+        gap:20px
+    }    
+    .categoria{
+        text-align: center;
+        align-items: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-style: italic;
     }
 }
