@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, rgb(251, 255, 255), rgb(117, 116, 194));
+    background: linear-gradient(to right, rgb(252, 251, 248), rgb(218, 218, 240));
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -11,7 +11,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center ;
-    gap:600px;
+    gap:1300px;
 }
 .hm1__title img{
     width: 200px;
@@ -40,10 +40,20 @@ header{
 @media(max-width:768px) {
     header{
         flex-direction: column;
+        gap: 1px;
+        justify-content: center;
+    }
+    .hm-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }.hm1-container__menu{
         gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
     .hm1__title img{
-        width: 170px;
-        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
