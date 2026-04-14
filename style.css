@@ -44,6 +44,7 @@ header{
     align-items: center;
     margin-top: 20px;
 }
+
 @media(max-width:768px) {
     header{
         flex-direction: column;
@@ -75,14 +76,54 @@ header{
         align-items: center;
     }
     .categorias{
+        justify-content: center;
         display: flex;
+        flex-wrap: wrap;
         gap:20px
     }    
     .categoria{
+        flex-wrap: wrap;
         text-align: center;
         align-items: center;
         font-family:'Times New Roman', Times, serif;
         font-size: 15px;
         font-style: italic;
+    }
+    .categoria img{
+        width: 100px;
+        height: 150px;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2), 0 6px 20px rgba(0, 42, 255, 0.19);
+        transition: transform 0.3s ease;
+    }
+    .categoria img:hover{
+        transform: scale(1.3);
+    }   
+    .productosmas-vendidos{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .producto{
+        text-align: center;
+        align-items: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .producto img{
+        width: 100px;
+        height: 150px;
+        box-shadow: 0 4px 8px rgba(255, 0,  0, 0.2), 0 6px 20px rgba(0, 42, 255, 0.19);
+        transition: transform 0.3s ease;
+    }
+    .producto img:hover{
+        transform: scale(1.3);
     }
 }
