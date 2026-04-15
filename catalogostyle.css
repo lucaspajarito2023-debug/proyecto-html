@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     min-height: 100vh;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .header{
     margin: auto;
@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center ;
     gap:1300px;
+    text-align: center;
 }
 .hm1-container__menu{
     display: flex;
@@ -38,6 +39,10 @@ body{
     color: rgb(22, 22, 22);
     font-weight: bold;
 }
+.parrafo__catalogo {
+    text-align: center;
+    margin-top:5px;
+}
 @media(max-width:768px) {
 .header {
         margin-top: 10px;
@@ -61,6 +66,29 @@ body{
         align-items: center;
         max-width: 100%;
         height: auto;
+}
+.catalogo__productos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.producto {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: solid 1px #ccc;
+        margin: 10px;
+        background-color: rgba(250, 237, 237, 0.8);
+
+}
+.producto img{
+        max-width: 50%;
+        height: auto;
+        object-fit: cover;
+        margin: 15px;
 }
 }
 
@@ -91,4 +119,25 @@ body {
         flex-wrap: wrap;
         gap: 10px;
     }
+    .catalogo__productos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .producto {
+        flex-direction: column;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: solid 1px #ccc;
+            margin: 10px
+    }
+    .producto img{
+            max-width: 50%;
+            height: auto;
+            object-fit: cover;
+            margin: 15px;
+    }
+
 }
