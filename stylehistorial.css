@@ -46,6 +46,9 @@ body{
     text-align: right;
     font-size: 12px;
 }
+nav h3{
+    font-size: 12px;
+}
 @media (orientation: landscape) and (max-width: 900px)  
 {    .header {
     display: flex;
@@ -55,4 +58,62 @@ body{
         flex-direction: column;
         justify-content: center;
     }                                       
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    background: rgb(198, 174, 221);
+    padding: 5px;
+    border-radius: 15px;
+}
+* 🔥 ARREGLO GENERAL RESPONSIVE */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 🔥 ARREGLO HEADER EN PANTALLAS GRANDES Y HORIZONTALES */
+@media (max-width: 1200px) {
+    ompras-realizadas {
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .compras{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 11px;
+    }
+    .compra{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: solid 1px black;;
+        font-size: 12px;
+    }
+    .container{
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .detalles{
+        text-align: left;
+        font-size: 12px;
+    }
+    .resumen{
+        text-align: right;
+        font-size: 12px;
+    }
+    nav h3{
+        font-size: 12px;
+    }
 }
