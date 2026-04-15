@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.header {
+    display: flex;
+    gap:55px; 
+    align-items:center;
+    
+}
+.volver img{
+    width: 40px;
+    height: 40px;
+} 
+main{
+    justify-content: center;
+    margin-top: 150px;
+}
+.mi-boton a{
+    color: azure;
+    text-decoration: none;
+}
+.mi-boton{
+    background-color: rgba(61, 33, 221, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
