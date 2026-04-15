@@ -1,5 +1,4 @@
 body{
-    background: linear-gradient(to right, rgb(252, 251, 248), rgb(218, 218, 240));
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -28,7 +27,7 @@ header{
     align-items: center;
 }
 .hm1-container__menu img{
-    width: 90px;
+    width: 40px;
     height: 40px;
 }
 .hm1-container__menu a{
