@@ -1,48 +1,117 @@
-body{
-    
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-}
+/* 🔥 HEADER CORREGIDO */
 .header{
-    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center ;
-    gap:1300px;
-    text-align: center;
-}
-.hm1-container__menu{
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 15px;
+    height: 70px;
+    margin: 0;
+    gap: 0;
 }
+
+/* 🔥 LOGO CENTRADO */
+.hm1__title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
 .hm1__title img{
-    width: 180px;
-    margin-top: 10px;
+    width: 140px;
+    margin-top: 5px;
 }
-.hm1-container__menu img{
-    width: 30px;
-    height: 30px;
+
+/* 🔥 OCULTAR CHECKBOX */
+#menu-toggle{
+    display: none;
 }
-.hm1-container__menu a{
-    text-decoration: none;
+
+/* 🔥 HAMBURGUESA IZQUIERDA */
+.menu-icon{
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
 }
+
+/* 🔥 CARRITO DERECHA */
+.carrito{
+    margin-left: auto;
+    z-index: 2;
+}
+
+.carrito img{
+    width: 25px;
+}
+
+/* 🔥 MENÚ LATERAL */
+.hm-container{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100vh;
+    background: white;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 80px;
+}
+
+/* 🔥 ACTIVAR MENÚ */
+#menu-toggle:checked ~ .hm-container{
+    left: 0;
+}
+
+/* 🔥 MENÚ EN COLUMNA */
+.hm1-container__menu{
+    display: flex; /* 🔥 FALTABA ESTO */
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
 .hm1-container__menu li{
     list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
-.hm1-container__menu a:hover{
-    color: rgb(22, 22, 22);
-    font-weight: bold;
+.hm1-container__menu a{
+    color: black;
+    text-decoration: none;
 }
-.parrafo__catalogo {
+.producto{
+    border: solid black 1px;
+
+}
+.catalogo-productos{
     text-align: center;
-    margin-top:5px;
+justify-content: center;
+align-items: center;
 }
+.name-tipo{
+    border: solid 1px black;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.tipo-ropa{
+    display: flex;
+    gap:20px
+}
+.tipo-cosmetico{
+    display: flex;
+    gap: 20px;
+}
+.producto img{
+    height: 300px;
+    width: 200px;
+}
+
 .mi-boton{
     background-color: rgba(61, 33, 221, 0.8);
     color: white;
@@ -55,127 +124,4 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10%;
-}
-.catalogo__productos button{
-    background-color: rgba(61, 33, 221, 0.8);
-
-}
-
-@media(max-width:768px) {
-.header {
-        margin-top: 10px;
-        flex-direction: column;
-        gap: 1px;
-        justify-content: center;
-        align-items: center;
-}
-.hm-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-.hm1-container__menu {
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-}
-.hm1__title img{
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        height: auto;
-}
-.catalogo__productos {
-        display: block;
-        justify-content: center;
-        align-items: center;
-}
-.producto {
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border: solid 1px #ccc;
-        margin: 10px;
-        background-color: rgba(250, 237, 237, 0.8);
-
-}
-.producto img{
-        max-width: 50%;
-        height: auto;
-        object-fit: cover;
-        margin: 15px;
-}
-.name-tipo{
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        margin: self-start;
-        border: slateblue 1px solid;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.8);
-}
-}
-
-/* 🔥 EVITAR DESBORDAMIENTO */
-body {
-    overflow-x: hidden;
-}
-
-/* 🔥 ARREGLO HEADER EN PANTALLAS GRANDES Y HORIZONTALES */
-@media (max-width: 1200px) {
-    header {
-        gap: 50px; /* reduce ese 1300px */
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0 10px;
-    }
-}
-
-/* 🔥 CUANDO EL TELÉFONO ESTÁ HORIZONTAL */
-@media (orientation: landscape) and (max-width: 900px) 
-{
-    .header {
-        flex-direction: row;
-        gap: 20px;
-        justify-content: space-between;
-    }
-    .hm1-container__menu {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .catalogo__productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .producto {
-            flex-direction: column;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border: solid 1px #ccc;
-            margin: 10px;
-    }
-    .producto img{
-            max-width: 200px;
-            height: 200px;
-            object-fit: cover;
-            margin: 15px;
-    }
-    .name-tipo{
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        margin: self-start;
-        border: slateblue 1px solid;
-        padding: 5px;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-
 }

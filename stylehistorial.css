@@ -17,6 +17,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
+.compras-realizadas img{
+    width: 50px;
+    height: 50px;
+}
 .compras{
     flex-direction: column;
     justify-content: center;
@@ -28,6 +32,13 @@ body{
     text-align: center;
     border: solid 1px black;;
     font-size: 12px;
+}
+.compra a{
+    background: rgb(250, 94, 190);
+    color: black;
+    padding: 7px 10px;
+    border-radius: 25px;
+    text-decoration: none;
 }
 .container{
     margin-top: 0;

@@ -1,0 +1,55 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.header {
+    display: flex;
+    gap:110px; 
+    align-items:center;
+    
+}
+.volver img{
+    width: 40px;
+    height: 40px;
+} 
+main{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.cards{
+    display: flex;
+    gap:20px;
+    border: solid black 1px;
+    margin: 20px;
+}
+.image img{
+    width: 90px;
+    height: 90px;
+}
+.info{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    object-position: column;
+}
+.ver a{
+    text-decoration: none;
+    color: black;
+}
+.mi-boton{
+    background-color: rgba(61, 33, 221, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
