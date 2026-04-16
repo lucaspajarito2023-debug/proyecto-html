@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Lucas%20Pajarito&fontSize=40"/>
 </p> 
 
-# 📸PORTAFOLIO_
+# 📸 Campus-shop_
 #### _DESCRIPCION:_
 El proyecto consiste en la construccion completa de la interfaz frontal de un E-commerce academico para compra y venta de productos dentro del entorno univesitario.
 <p align="center">
